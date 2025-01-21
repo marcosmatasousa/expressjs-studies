@@ -5,32 +5,33 @@ export const createUserValidationSchema = {
         min: 5,
         max: 32,
       },
-      errorMessage: "Username must be at least 5 characters with a max of 32 characters"
+      errorMessage:
+        "Username must be at least 5 characters with a max of 32 characters",
     },
     notEmpty: {
-      errorMessage: "Name cannot be empty"
+      errorMessage: "Name cannot be empty",
     },
     isString: {
-      errorMessage: "Name must be a string"
+      errorMessage: "Name must be a string",
     },
   },
   displayName: {
     notEmpty: {
-      errorMessage: "Display name must not be empty"
-    }
+      errorMessage: "Display name must not be empty",
+    },
   },
   password: {
     notEmpty: {
-      errorMessage: "Password name must not be empty"
+      errorMessage: "Password name must not be empty",
     },
     isLength: {
       options: {
         min: 8,
         max: 15,
       },
-      errorMessage: "Password must have 8-15 characters"
+      errorMessage: "Password must have 8-15 characters",
     },
-  }
+  },
 };
 
 export const queryParamsValidationSchema = {
@@ -38,14 +39,14 @@ export const queryParamsValidationSchema = {
     isString: true,
     optional: true,
     notEmpty: {
-      errorMessage: "Must not be empty"
+      errorMessage: "Must not be empty",
     },
     isLength: {
       options: {
         min: 3,
         max: 10,
       },
-      errorMessage: "Must be at least 3-10 characters"
-    }
-  }
+      errorMessage: "Must be at least 3-10 characters",
+    },
+  },
 };
